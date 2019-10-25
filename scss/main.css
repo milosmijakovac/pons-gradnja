@@ -362,6 +362,10 @@ header .header-content ul a:hover {
           align-items: center;
 }
 
+.footer p {
+  font-family: "Gotham-Book", sans-serif;
+}
+
 .footer div img:not(:last-of-type) {
   margin-right: 15px;
 }
