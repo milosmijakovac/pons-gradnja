@@ -256,7 +256,8 @@ header .header-content ul a:hover {
 .projects .col-wrapper .row-1 div:not(:last-of-type),
 .projects .col-wrapper .row-2 div:not(:last-of-type),
 .projects .col-wrapper .row-3 div:not(:last-of-type) {
-  padding-right: 55px;
+  position: relative;
+  margin-right: 55px;
 }
 
 .projects .col-wrapper .row-1 div img,

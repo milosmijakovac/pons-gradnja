@@ -68,7 +68,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     .header-social-wrp {
       width: 83%;
       margin: 0 auto;
@@ -209,7 +209,8 @@ header {
         }
 
         &:not(:last-of-type) {
-          padding-right: 55px;
+          position: relative;
+          margin-right: 55px;
         }
 
         img {
