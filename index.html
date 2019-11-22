@@ -6,50 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <title>Document</title>
 </head>
 
 <body>
+  <!-- mobile menu -->
+  <div class="mobile-menu">
 
-  <div class="wrapper">
+    <ul class="nav-links-mob">
+      <li><a href="/">početna</a></li>
+      <li><a href="reference.html">reference</a></li>
+      <li><a href="vesti.html">vesti</a></li>
+      <li><a href="kontakt.html">kontakt</a></li>
+    </ul>
 
-    <!-- mobile menu -->
-    <div class="mobile-menu">
-
-      <ul class="nav-links-mob">
-        <li><a href="/">početna</a></li>
-        <li><a href="reference.html">reference</a></li>
-        <li><a href="vesti.html">vesti</a></li>
-        <li><a href="kontakt.html">kontakt</a></li>
-      </ul>
-
-      <div class="mob-footer">
-        <div class="header-social-mob">
-          <div class="header-social-mob-wrp">
-            <span>Pronadji nas na socijalnim mrežama:</span>
-            <div class="social-links">
-              <a href="https://facebook.com" target="_blank"><img src="./assets/img/Facebook.svg" alt=""></a>
-              <a href="https://youtube.com" target="_blank"><img src="./assets/img/Youtube.svg" alt=""></a>
-              <a href="https://instagram.com" target="_blank"><img src="./assets/img/instagram.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-        <footer class="footer">
-          <p>
-            &copy; Copyright 2019 Design & Develop: mmstudio
-          </p>
-          <div class="copyright-icons">
-            <img src="./assets/img/certificate-logo 1.svg" alt="copyright">
-            <img src="./assets/img/certificate-logo 2.svg" alt="copyright">
-            <img src="./assets/img/certificate-logo 3.svg" alt="copyright">
-          </div>
-        </footer>
-      </div>
-    </div>
-    <!-- mobile menu end -->
-    <header class="is-fixed">
-      <div class="header-social">
-        <div class="header-social-wrp">
+    <div class="mob-footer">
+      <div class="header-social-mob">
+        <div class="header-social-mob-wrp">
           <span>Pronadji nas na socijalnim mrežama:</span>
           <div class="social-links">
             <a href="https://facebook.com" target="_blank"><img src="./assets/img/Facebook.svg" alt=""></a>
@@ -58,6 +32,25 @@
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <p>
+          &copy; Copyright 2019 Design & Develop: mmstudio
+        </p>
+        <div class="copyright-icons">
+          <img src="./assets/img/certificate-logo 1.svg" alt="copyright">
+          <img src="./assets/img/certificate-logo 2.svg" alt="copyright">
+          <img src="./assets/img/certificate-logo 3.svg" alt="copyright">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- mobile menu end -->
+
+
+  <div class="wrapper">
+
+    <header class="is-fixed">
+
       <div class="header-content">
         <div class="header-social-wrp">
           <a href="/" class="logo"><img src="./assets//img/Logo.svg" alt="company-logo"></a>
@@ -80,16 +73,26 @@
           </nav>
         </div>
       </div>
+
+      <div class="header-social">
+        <div class="header-social-wrp">
+          <span>Pronadji nas na socijalnim mrežama:</span>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="./assets/img/Facebook.svg" alt=""></a>
+            <a href="https://youtube.com" target="_blank"><img src="./assets/img/Youtube.svg" alt=""></a>
+            <a href="https://instagram.com" target="_blank"><img src="./assets/img/instagram.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
     </header>
 
 
 
 
     <div class="video-container">
-      <video autoplay="autoplay" loop="loop" id="hero-video" poster="./assets/img/14369636.jpg" muted=""
+      <video autoplay="autoplay" loop="loop" id="hero-video" poster="./assets/img/ponsgradnja.jpg" muted=""
         type="video/mp4" playsinline="">
-        <source src="http://productionservicecroatia.com/wp-content/themes/mmstudio/assets/images/hero-video.mp4"
-          type="video/mp4">
+        <source src="/assets/img/ponsgradnja2020_1.mp4" type="video/mp4">
       </video>
     </div>
     <div class="content">
@@ -108,58 +111,182 @@
           <h1 class="title-project">projekti</h1>
           <span class="hr-line-h1-mobile"></span>
           <div class="row-1">
-            <div>
-              <img src="./assets/img/Photo1.jpg" alt="">
+
+            <div class="project-item">
+              <!-- main photo -->
+              <a class="item-link-wrp" data-fancybox="gallery-agena" href="./assets/img/agena-1.jpg">
+                <div class="overlay"></div>
+                <img class="img-project" src="./assets/img/agena-1.jpg" alt="">
+              </a>
+
+              <!-- gallery photos -->
+              <a class="item-link-thumb" data-fancybox="gallery-agena" href="./assets/img/agena2-655.jpg">
+                <img class="img-thumb" src="./assets/img/agena2-192.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-agena" href="./assets/img/agena3-655.jpg">
+                <img class="img-thumb" src="./assets/img/agena3-192.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-agena" href="./assets/img/agena4-655.jpg">
+                <img class="img-thumb" src="./assets/img/agena4-192.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-agena" href="./assets/img/agena5-655.jpg">
+                <img class="img-thumb" src="./assets/img/agena5-192.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-agena" href="./assets/img/agena6-655.jpg">
+                <img class="img-thumb" src="./assets/img/agena6-192.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-agena" href="./assets/img/agena7-655.jpg">
+                <img class="img-thumb" src="./assets/img/agena7-192.jpg" alt="">
+              </a>
+
               <div class="titl">
-                <h1>Energotehna –Novi Sad - Majdan</h1>
-                <p>Izgradnja mini elektrane na gas.Izvedeni svi građevinski radovi</p>
+                <h1>AGENA TECHNOLOGY - INDUSTRIJSKA ZONA ŠIMANOVCI</h1>
+                <p class="project-paragraph">Izgradnja mini elektrane na gas. Izvedeni svi gradjevinski radovi.</p>
               </div>
             </div>
+            <div class="project-item">
+              <!-- main photo -->
+              <a class="item-link-wrp" data-fancybox="gallery-beska" href="./assets/img/beska1-655.jpg">
+                <div class="overlay"></div>
+                <img class="img-project" src="./assets/img/beska1-655.jpg" alt="">
+              </a>
 
-            <div>
-              <img src="./assets/img/Photo2.jpg" alt="">
+
+              <!-- gallery photos -->
+              <a class="item-link-thumb" data-fancybox="gallery-beska" href="./assets/img/beska2-655.jpg">
+                <img class="img-thumb" src="./assets/img/beska2-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-beska" href="./assets/img/beska3-655.jpg">
+                <img class="img-thumb" src="./assets/img/beska3-655.jpg" alt="">
+              </a>
+
               <div class="titl">
-                <h1>Coca Cola HBC - Zemun </h1>
-                <p>Magacin i kancelarije logistike P=2800m2</p>
+                <h1>BESKA AGRAR</h1>
+
+                <p class="project-paragraph">Magacin i kancelarije logistike P=2800m2</p>
               </div>
             </div>
           </div>
 
           <div class="row-2">
-            <div>
-              <img src="./assets/img/Photo3.jpg" alt="">
+            <div class="project-item">
+              <!-- main photo -->
+              <a class="item-link-wrp" data-fancybox="gallery-cocacola" href="./assets/img/cocacola-655.jpg">
+                <div class="overlay"></div>
+                <img class="img-project" src="./assets/img/cocacola-655.jpg" alt="">
+              </a>
+
+
+              <!-- gallery photos -->
+              <a class="item-link-thumb" data-fancybox="gallery-cocacola" href="./assets/img/magacin1-655.jpg">
+                <img class="img-thumb" src="./assets/img/magacin1-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-cocacola" href="./assets/img/magacin2-655.jpg">
+                <img class="img-thumb" src="./assets/img/magacin2-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-cocacola" href="./assets/img/magacin3-655.jpg">
+                <img class="img-thumb" src="./assets/img/magacin3-655.jpg" alt="">
+              </a>
+
+
               <div class="titl">
-                <h1>Univerexport - Novi Sad</h1>
-                <p>Izvedeni radovi na spoljnoj kanalizaciji,saobraćajnicama i parkinzima.Kompletni grubi građevinski
-                  radovi
-                  izvedeni na celom objektu.</p>
+                <h1>COCA COLA HBC - ZEMUN</h1>
+                <p class="project-paragraph">Izvedeni radovi na spoljnoj kanalizaciji, saobracajnicama i parkinzima.
+                  Kompletni grubi gradjevinski radovi izvedeni na celom objektu.</p>
               </div>
             </div>
 
-            <div>
-              <img src="./assets/img/Photo4.jpg" alt="">
+            <div class="project-item">
+              <!-- main photo -->
+              <a class="item-link-wrp" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint1-655.jpg">
+                <div class="overlay"></div>
+                <img class="img-project" src="./assets/img/enveloprint1-655.jpg" alt="">
+              </a>
+
+
+              <!-- gallery photos -->
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint2-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint2-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint3-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint3-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint4-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint4-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint5-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint5-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint6-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint6-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint7-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint7-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint8-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint8-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-enveloprint" href="./assets/img/enveloprint9-655.jpg">
+                <img class="img-thumb" src="./assets/img/enveloprint9-655.jpg" alt="">
+              </a>
+
+
               <div class="titl">
-                <h1>Inteclean - Batajnica</h1>
-                <p>Proizvodno poslovni kompleks P=1500m2 sa P=1000m2 spoljnog uređenja saobraćajnica i parkinga</p>
+                <h1>ENVELOPRINT - NOVA PAZOVA - STARA PAZOVA</h1>
+                <p class="project-paragraph">Proizvodno poslovni kompleks P=1500m2 sa P=1000m2 spoljnog uredjenja
+                  saobracajnica i parkinga</p>
               </div>
             </div>
           </div>
 
           <div class="row-3">
-            <div>
-              <img src="./assets/img/Photo5.jpg" alt="">
+            <div class="project-item">
+              <!-- main photo -->
+              <a class="item-link-wrp" data-fancybox="gallery-koste" href="./assets/img/koste1-655.jpg">
+                <div class="overlay"></div>
+                <img class="img-project" src="./assets/img/koste1-655.jpg" alt="">
+              </a>
+
+
+              <!-- gallery photos -->
+              <a class="item-link-thumb" data-fancybox="gallery-koste" href="./assets/img/koste2-655.jpg">
+                <img class="img-thumb" src="./assets/img/koste2-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-koste" href="./assets/img/koste3-655.jpg">
+                <img class="img-thumb" src="./assets/img/koste3-655.jpg" alt="">
+              </a>
+
+
+
               <div class="titl">
-                <h1>Neoplanta A.D - Novi Sad</h1>
-                <p>Kompletna rekonstrukcija fabrike,izrada transportnih saobraćajnica i platoa,izrada tehnološke
-                  kanalizacije do budućeg prečistača otpadnih voda</p>
+                <h1>KOSTE JOVANOVICA</h1>
+                <p class="project-paragraph">Kompletna rekonstrukcija fabrike, izrada transportnih saobracajnica i
+                  platoa, izrada tehnološke kanalizacije do budućeg prečistača otpadnih voda</p>
               </div>
             </div>
 
-            <div>
-              <img src="./assets/img/Photo6.jpg" alt="">
+            <div class="project-item">
+              <!-- main photo -->
+              <a class="item-link-wrp" data-fancybox="gallery-krusedol" href="./assets/img/krusedol1-655.jpg">
+                <div class="overlay"></div>
+                <img class="img-project" src="./assets/img/krusedol1-655.jpg" alt="">
+              </a>
+
+
+              <!-- gallery photos -->
+              <a class="item-link-thumb" data-fancybox="gallery-krusedol" href="./assets/img/krusedol2-655.jpg">
+                <img class="img-thumb" src="./assets/img/krusedol2-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-krusedol" href="./assets/img/krusedol3-655.jpg">
+                <img class="img-thumb" src="./assets/img/krusedol3-655.jpg" alt="">
+              </a>
+              <a class="item-link-thumb" data-fancybox="gallery-krusedol" href="./assets/img/krusedol4-655.jpg">
+                <img class="img-thumb" src="./assets/img/krusedol4-655.jpg" alt="">
+              </a>
+
               <div class="titl">
-                <h1>Speed-Petrol - Novi Sad</h1>
-                <p>Izvedene tankvane i temlji rezervoara za gorivo</p>
+                <h1>KRUSEDOL</h1>
+                <p class="project-paragraph">Izvedebe tankvane i temelji rezervoara za gorivo</p>
               </div>
             </div>
           </div>
@@ -185,7 +312,7 @@
               budućim vremenima.
             </p>
           </div>
-          <span>02</span>
+          <span>01</span>
         </div>
         <span class="hr-line"></span>
         <div class="info-wrapper">
@@ -201,7 +328,7 @@
               najbolja rešenja za objekat koji gradimo.
             </p>
           </div>
-          <span>01</span>
+          <span>02</span>
         </div>
         <span class="hr-line-mobile"></span>
       </div>
@@ -212,8 +339,8 @@
         width="100%" height="860" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
     <footer class="footer">
-      <p>
-        &copy; Copyright 2019 Design & Develop: mmstudio
+      <p class="copyright">
+        &copy; Copyright 2019 Design & Develop: <a class="mmstudio-link" href="http://www.mmstudio.rs/s" target="blank">mmstudio</a>
       </p>
       <div class="copyright-icons">
         <img src="./assets/img/certificate-logo 1.svg" alt="copyright">
@@ -222,6 +349,8 @@
       </div>
     </footer>
   </div> <!-- wrapper end -->
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery.fancybox.min.js"></script>
   <script src="main.js"></script>
 </body>
 
